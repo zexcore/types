@@ -5,19 +5,11 @@ import { LogMessageKind } from "./LogMessageKind";
  */
 
 export type DashboardWidget =
+  | { type: "stat"; name: string; header: string }
   | {
-      type: undefined;
-    }
-  | {
-      type: "stat";
-      name: string;
-    }
-  | {
+      header: string;
       type: "logs";
       source:
-        | {
-            type: "function_calls" | "http_requests" | "log_messages";
-          }
         | {
             type: "function_calls";
             // Options relevant to function calls
@@ -40,11 +32,9 @@ export type DashboardWidget =
           };
     }
   | {
+      header: string;
       type: "counter";
       source:
-        | {
-            type: "function_calls" | "http_requests" | "log_messages" | "users";
-          }
         | {
             type: "function_calls";
             // Options relevant to function calls
@@ -68,7 +58,4 @@ export type DashboardWidget =
         | {
             type: "users";
           };
-    }
-  | {
-      type: "logs" | "counter" | "stat";
     };
