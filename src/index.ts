@@ -14,6 +14,7 @@ import { StripeSubscription } from "./models/Stripe/StripeSubscription";
 import { SubscriptionStatus } from "./models/Stripe/StripeSubscription";
 import { HttpRequestLog } from "./models/HttpRequestLog";
 import { FunctionCallLog } from "./models/FunctionCallLog";
+import { DashboardWidget } from "./models/DashboardWidget";
 
 export {
   ProjectPlatform,
@@ -32,4 +33,5 @@ export {
   Role,
   FunctionCallLog,
   HttpRequestLog,
+  DashboardWidget,
 };
