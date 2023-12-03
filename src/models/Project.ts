@@ -1,3 +1,5 @@
+import { ProjectPlatform } from "./ProjectPlatform";
+
 /**
  * Represents a user's project.
  */
@@ -9,4 +11,5 @@ export type Project = {
   created: number;
   updated: number;
   secret: string;
+  platform: ProjectPlatform;
 };

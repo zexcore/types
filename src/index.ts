@@ -5,6 +5,7 @@ import { PaginatedResponse } from "./models/PaginatedResponse";
 import { Subscription } from "./models/Subscription";
 import { Project } from "./models/Project";
 import { LogMessage } from "./models/LogMessage";
+import { ProjectPlatform } from "./models/ProjectPlatform";
 import { LogMessageKind } from "./models/LogMessageKind";
 import { StripeProduct } from "./models/Stripe/StripeProduct";
 import { Invoice } from "./models/Stripe/StripeInvoice";
@@ -15,6 +16,7 @@ import { HttpRequestLog } from "./models/HttpRequestLog";
 import { FunctionCallLog } from "./models/FunctionCallLog";
 
 export {
+  ProjectPlatform,
   Project,
   LogMessage,
   LogMessageKind,

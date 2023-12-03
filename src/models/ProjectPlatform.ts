@@ -1,6 +1,6 @@
 export enum ProjectPlatform {
-  React,
-  ReactNative,
-  NodeJS,
-  Generic,
+  React = "react",
+  ReactNative = "react-native",
+  NodeJS = "nodejs",
+  Generic = "generic",
 }
