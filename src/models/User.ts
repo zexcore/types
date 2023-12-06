@@ -1,6 +1,6 @@
 import { Role } from "./Role";
 import { PaymentMethod } from "./Stripe/PaymentMethod";
-import { StripeSubscription } from "./Stripe/StripeSubscription";
+import { Subscription } from "./Subscription";
 
 /**
  * Represents a user on the PFM Platform. A user can either be a customer or an administrator. Customers have 'customer_info' information attached, and a few aditional properties such as subscriptions.
@@ -86,7 +86,7 @@ If an invoice is marked uncollectible by dunning, delinquent doesn’t get reset
   /**
    * Active subscriptions of the user.
    */
-  subscriptions: StripeSubscription[];
+  subscriptions: Subscription[];
 
   /**
    * UID of the user who created this account. Null for signed up users.
@@ -127,9 +127,4 @@ If an invoice is marked uncollectible by dunning, delinquent doesn’t get reset
    * Any comments added by admins.
    */
   comments?: string;
-
-  /**
-   * Base-64 encoded signature of the user.
-   */
-  signature?: string;
 };

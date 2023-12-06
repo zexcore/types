@@ -11,7 +11,6 @@ export type Project = {
   owner: string;
   created: number;
   updated: number;
-  secret: string;
   platform: ProjectPlatform;
   dashboard?: DashboardWidget[];
 };

@@ -15,8 +15,10 @@ import { SubscriptionStatus } from "./models/Stripe/StripeSubscription";
 import { HttpRequestLog } from "./models/HttpRequestLog";
 import { FunctionCallLog } from "./models/FunctionCallLog";
 import { DashboardWidget } from "./models/DashboardWidget";
+import { APIKey } from "./models/APIKey";
 
 export {
+  APIKey,
   ProjectPlatform,
   Project,
   LogMessage,
