@@ -29,10 +29,15 @@ export type Event = {
   /**
    * Any mixed data associated with the event.
    */
-  data?: any;
+  data?: any[];
 
   /**
    * An identifier can be anything that identifies the user or calling API's Context.
    */
   identifier?: string;
+
+  /**
+   * Description of the event. Not important.
+   */
+  description?: string;
 };
