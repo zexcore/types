@@ -3,14 +3,13 @@
  */
 
 export type HttpRequestLog = {
+  id: string;
   method: string;
   path: string;
   status: number;
   ip: string;
   project: string;
-  tags: string[];
   timestamp: number;
-
   /**
    * Time it took to handle this request, in milliseconds.
    */

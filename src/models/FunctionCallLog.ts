@@ -3,10 +3,12 @@
  */
 
 export type FunctionCallLog = {
+  /**
+   * Unique snowflake id.
+   */
+  id: string;
   name: string;
-  parameters?: any;
-  timestamp: number;
   project: string;
-  tags?: string[];
-  execution_time?: number;
+  timestamp: number;
+  parameters?: any[];
 };
