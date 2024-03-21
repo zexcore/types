@@ -71,4 +71,10 @@ export type User = {
    * Any comments added by admins.
    */
   comments?: string;
+
+  licenseKey?: string;
+
+  licenseKeyInstance?: string;
+
+  licenseKeyId?: string;
 };

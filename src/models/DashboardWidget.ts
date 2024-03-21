@@ -5,7 +5,7 @@ import { LogMessageKind } from "./LogMessageKind";
  */
 
 export type DashboardWidget =
-  | { type: "stat"; name: string; header: string }
+  | { type: "events"; names: string[]; header: string }
   | {
       header: string;
       type: "logs";
@@ -56,6 +56,8 @@ export type DashboardWidget =
             kind?: LogMessageKind;
           }
         | {
-            type: "users";
+            type: "custom";
+            // Name of the custom counter.
+            name: string;
           };
     };
